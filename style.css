@@ -33,7 +33,8 @@ body{
     background-position: top center;
     background-size: cover; */
     /* background: color ou image, repeat, position/size */
-    background: var(--bg-url) no-repeat top center/cover
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 body *{
@@ -157,4 +158,13 @@ font-size: 14px;
 footer a:hover{
     transition: all;
     color: var(--link-hover);
+}
+/* media queries */
+@media (min-width: 700px){
+    :root {
+        --bg-url: url(./assets/assets/bg-desktop.jpg);
+    }
+    .light {
+        --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+    }
 }
